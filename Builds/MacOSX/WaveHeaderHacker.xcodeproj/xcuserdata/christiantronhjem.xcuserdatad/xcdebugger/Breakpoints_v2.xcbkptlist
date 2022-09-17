@@ -174,8 +174,8 @@
             filePath = "../../Source/MainComponent.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "MainComponent::MainComponent()"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "../../Source/MainComponent.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "MainComponent::paint(g)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "../../Source/MainComponent.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "MainComponent::paint(g)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "../../Source/MainComponent.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "MainComponent::buttonClicked(b)"
             landmarkType = "7">
          </BreakpointContent>
@@ -290,6 +290,38 @@
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43443806-36E1-42D7-907B-A57F85BBB4FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../JUCE/modules/juce_gui_basics/desktop/juce_Desktop.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "Desktop::setDefaultLookAndFeel(newDefaultLookAndFeel)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38FCBAE3-D336-45B5-9E4F-DE271DD4F90E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "LookAndFeel::setDefaultLookAndFeel(newDefaultLookAndFeel)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

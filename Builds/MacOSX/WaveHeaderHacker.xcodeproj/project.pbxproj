@@ -188,6 +188,8 @@
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					61B0C7B478DC25D9ADE6D96D = {
+						DevelopmentTeam = R5Y7P9P4KU;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -314,10 +316,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = R5Y7P9P4KU;
 				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -366,7 +369,7 @@
 					"-weak_framework",
 					MetalKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.WaveHeaderHacker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SonoTron.WaveHeaderHacker;
 				PRODUCT_NAME = WaveHeaderHacker;
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -427,10 +430,12 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = R5Y7P9P4KU;
 				EXCLUDED_ARCHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -478,8 +483,9 @@
 					"-weak_framework",
 					MetalKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.WaveHeaderHacker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SonoTron.WaveHeaderHacker;
 				PRODUCT_NAME = WaveHeaderHacker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 			};

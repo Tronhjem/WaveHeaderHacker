@@ -11,21 +11,30 @@ using namespace juce;
     your controls and content.
 */
 
+class HackerLookAndFeel : public juce::LookAndFeel_V4
+{
+public:
+    HackerLookAndFeel()
+    {
+        setDefaultSansSerifTypefaceName("Roboto");
+        setColour (TextButton::ColourIds::buttonColourId, Colour(0,0,0));
+        setColour (TextEditor::backgroundColourId, Colour(0,0,0));
+    }
+};
+
 class FieldComponent : public juce::Component
 {
 public:
     FieldComponent(int x, int y, String name): ComponentName(name)
     {
-        font.setTypefaceName("Futura");
         Label.setBounds(x-4, y, width, labelHeight);
         Label.setText(ComponentName, NotificationType::dontSendNotification);
-        Label.setFont(font);
         
         Editor.setBounds (x, y + labelHeight, width, editorHeight);
         Editor.setInputRestrictions(restrictionLength, numberRestriction);
-        Editor.setFont(font);
-        
-        Editor.setColour(Editor.backgroundColourId, Colour(0,0,0));
+        Font f;
+        f.setSizeAndStyle(400.f, "Roboto", 10.f, 10.f);
+        Editor.setFont(f);
     };
     
     ~FieldComponent()
@@ -65,6 +74,10 @@ public:
     }
 };
 
+
+
+
+
 class MainComponent  :  public juce::Component,
                         public juce::Button::Listener
 {
@@ -85,7 +98,9 @@ private:
     void buttonClicked(Button*) override;
     void choose(const FileChooser &);
     
+    HackerLookAndFeel lookAndFeel;
     FieldComponent ChannelsField    {75, 10, "Channels"};
+    
     FieldComponent SampleRateField  {75, 70, "Sample Rate"};
     FieldComponent BitDepthField    {75, 130, "Bit Depth"};
     
@@ -98,7 +113,7 @@ private:
     String waveFilePath;
     Vector2* randomPoints;
     
-    
+    Font font {};
     Label warningLabel {"Only supports .wav files"};
     
     WaveFileReader waveReader {};

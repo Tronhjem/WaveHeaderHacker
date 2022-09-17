@@ -1,6 +1,9 @@
 #include "MainComponent.h"
 #include <iostream>
 
+
+
+
 //==============================================================================
 MainComponent::MainComponent()
 {
@@ -14,17 +17,16 @@ MainComponent::MainComponent()
         int ranY = r.nextInt(windowWidth);
         randomPoints[i] = Vector2(ranX, ranY);
     }
-       
+    LookAndFeel::setDefaultLookAndFeel (&lookAndFeel);
     
-    loadButton.setBounds(100, 210, 100, 25);
+    loadButton.setBounds(75, 210, 150, 25);
     addAndMakeVisible(&loadButton);
     loadButton.addListener(this);
-    loadButton.setColour(loadButton.buttonColourId, Colour(0,0,0));
     
-    saveButton.setBounds(100, 250, 100, 25);
+    
+    saveButton.setBounds(75, 250, 150, 25);
     addAndMakeVisible(&saveButton);
     saveButton.addListener(this);
-    saveButton.setColour(saveButton.buttonColourId, Colour(0,0,0));
     
     addAndMakeVisible(&SampleRateField.Label);
     addAndMakeVisible(&SampleRateField.Editor);

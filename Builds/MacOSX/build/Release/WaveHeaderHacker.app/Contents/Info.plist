@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>WaveHeaderHacker</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.WaveHeaderHacker</string>
+	<string>com.SonoTron.WaveHeaderHacker</string>
 	<key>CFBundleName</key>
 	<string>WaveHeaderHacker</string>
 	<key>CFBundlePackageType</key>
